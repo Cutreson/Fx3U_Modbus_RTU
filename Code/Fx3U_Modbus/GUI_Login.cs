@@ -37,5 +37,24 @@ namespace Fx3U_Modbus
         {
             Application.Exit();
         }
+
+        private void txtPassword_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode.Equals(Keys.Enter))
+            {
+                if (txtUserName.Text == "admin" && txtPassword.Text == "admin")
+                {
+                    this.Hide();
+                    GUI gui = new GUI();
+                    gui.ShowDialog();
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Sai mật khẩu");
+                }
+
+            }    
+        }
     }
 }
