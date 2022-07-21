@@ -50,7 +50,7 @@ namespace Fx3U_Modbus
         public static SQLiteConnection createConnection()
         {
             SQLiteConnection sqlite_conn;
-            sqlite_conn = new SQLiteConnection("Data Source=database.db; Version = 3; New = True; Compress = True; ");
+            sqlite_conn = new SQLiteConnection("Data Source=database.db; Version = 3; New = True; Compress = False; ");
             try
             {
                 sqlite_conn.Open();

@@ -428,7 +428,7 @@
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(365, 56);
             this.label17.TabIndex = 33;
-            this.label17.Text = "Ccmmunication test";
+            this.label17.Text = "Communication test";
             // 
             // GUI_Communication_Test
             // 
